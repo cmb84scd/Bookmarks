@@ -1,6 +1,5 @@
-
-<h1> The following are your bookmarks:
-     www.google.com
-     http://www.makersacademy.com
-     http://www.destroyallsoftware.com
-</h1>
+<ul>
+  <% @bookmarks.each do |bookmark| %>
+    <li><%= bookmark %></li>
+  <% end %>
+</ul>

@@ -1,7 +1,13 @@
-describe Bookmark do
-  subject(:bookmark) { described_class.new }
-    it 'displays a list of bookmarks' do
-    expect(bookmark.all).to eq(['www.google.com'])
-  end
+# require 'bookmark' #note: already indluded in the spec_helper.rb
 
+describe Bookmark do
+  describe '.all' do
+    it 'returns all bookmarks' do
+      bookmarks = Bookmark.all
+
+      expect(bookmarks).to include("http://www.makersacademy.com")
+      expect(bookmarks).to include("http://www.destroyallsoftware.com")
+      expect(bookmarks).to include("http://www.google.com")
+    end
+  end
 end
