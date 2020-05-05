@@ -8,6 +8,7 @@ gem 'capybara'
 gem 'rack'
 gem 'rspec'
 gem 'sinatra'
+gem 'pg'
 
 group :development, :test do
   gem 'rubocop', '0.79.0'
