@@ -22,6 +22,13 @@ I would like my bookmark manager to store my bookmarks and present them in a lis
 #### How to set up and use postgresq; database
 
   1. Connect to psql by typing 'psql' in the terminal
-  2. Create the database using the psql command CREATE DATABASE "bookmarks_manager";
-  3. Connect to the database using the pqsl command \c "bookmarks_manager";
+  2. Create the database using the psql command CREATE DATABASE "bookmark_manager";
+  3. Connect to the database using the pqsl command \c "bookmark_manager";
   4. Run the query we have saved in the file 01_create_bookmarks_table.sql
+
+#### How to set up and use postgresq; test database
+
+  1. Connect to psql by typing 'psql' in the terminal
+  2. Create the test database using the psql command CREATE DATABASE "bookmark_manager_test";
+  3. Connect to the database using the pqsl command \c "bookmark_manager_test";
+  4. Run the query we have saved in the file 01_create_bookmarks_table.sql  
