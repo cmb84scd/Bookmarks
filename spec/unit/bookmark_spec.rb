@@ -18,8 +18,8 @@ describe Bookmark do
       expect(bookmarks.first.id).to eq bookmark.id
       expect(bookmarks.first.title).to eq 'Makers Academy'
       expect(bookmarks.first.url).to eq 'http://www.makersacademy.com'
-      end
     end
+  end
 
   require 'database_helpers'
 
@@ -28,10 +28,10 @@ describe Bookmark do
       bookmark = Bookmark.create(url: 'http://www.testbookmark.com', title: 'Test Bookmark')
       persisted_data = persisted_data(id: bookmark.id)
 
-    expect(bookmark).to be_a Bookmark
-    expect(bookmark.id).to eq persisted_data['id']
-    expect(bookmark.title).to eq 'Test Bookmark'
-    expect(bookmark.url).to eq 'http://www.testbookmark.com'
+      expect(bookmark).to be_a Bookmark
+      expect(bookmark.id).to eq persisted_data['id']
+      expect(bookmark.title).to eq 'Test Bookmark'
+      expect(bookmark.url).to eq 'http://www.testbookmark.com'
     end
   end
 
