@@ -32,3 +32,4 @@ I would like my bookmark manager to store my bookmarks and present them in a lis
   2. Create the test database using the psql command CREATE DATABASE "bookmark_manager_test";
   3. Connect to the database using the pqsl command \c "bookmark_manager_test";
   4. Run the query we have saved in the file 01_create_bookmarks_table.sql  
+# bookmarks
